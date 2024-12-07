@@ -55,90 +55,100 @@ table {
 
 /* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
 
-html, body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background-image: url(archgrvyrd-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  text-align: center;
 
-}
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+ }
 
-.center {
-    width: 40px; /*----This is for responsiveness ----*/
-	min-width: 450px; /*----This is for responsiveness ----*/
-	padding: 2%;
-    margin: 100px auto;
- 	background: rgba(251, 188, 112, 0.5); /*this uses opacity of 50% for the background color*/
-	text-align: center;
-	border-radius: 50px 50px 50px 50px; /*----This rounds two of my corners----*/
-	/*border: 4px dashed white;*/
-	
-}
-   
-#logo {
-    width: 200px; /*----This is for responsiveness ----*/
-	margin-top: 50px; /*----This centers my logo----*/
-	margin-bottom: 1px;
-	/*border: 4px dashed red;*/
-	text-align: center;
-}
+ .container{ /*----This is for my text----*/
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content; center;
+	align-items: center;
+	font-size: 1vw; 
+ }
 
+ img{  /*----This is to left align my background image----*/
+	width: 50vw;
+	height: 100vh;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+ }
+
+#logo { /*----This is adjust my logo size----*/
+	width: 200px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 h1 {
-	font-family: "superior-title", serif;
-	font-weight: 400;
+	font-family: "poppins", sans-serif;
+	font-weight: 700;
 	font-style: normal;
-	font-size: 2em;
-    margin: 10px auto 10px auto; /*---- This is for space between logo and h1----*/
-    color: #3d294d;
+	font-size: 2.5em; /*----This is for text size ----*/
+    margin: 30px auto 20px auto; /*---- This is for space between logo and h1----*/
+    color: #a57fc4;
+	width: 50vw;
+	text-align: center;
 }
 
 h2 {
-	font-family: "superior-title", serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1.5em;
+	font-family: "poppins", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 2em; /*----This is for text size ----*/
     line-height: 1.4;
     color: #3d294d;
     padding: 0px 0px;
-    margin: 0px auto 25px auto;
+    margin: 0px auto 20px auto;
+	width: 50vw;
+	text-align: center;
 }
 
 p {
-	font-family: "superior-title", serif;
-	font-weight: 400;
+	font-family: "poppins", sans-serif;
+	font-weight: 300;
 	font-style: normal;
-	font-size: 1.5em;
+	font-size: 1.3em;
     line-height: 1.6;
     color: #3d294d;
+	width: 50vw;
+	text-align: center;
 }
     
-nav{
-	font-family: "superior-title", serif;
-	font-weight: 400;
+nav{ /*----This is my fixed nav bar----*/
+	font-family: "poppins", sans-serif;
+	font-weight: 500;
 	font-style: normal;
 	font-size: 1.2em;
 	width: 80%; /*----This is for responsiveness ----*/
-	margin: 0 auto; /*----This center the entire nav element inside the cneter div----*/
+	margin: 0 auto; /*----This centers the entire nav element inside the center div----*/
 	/*border: dashed turquoise*/
 	border-width: 3px 0; /*----This puts a 3 pixel border on top and bottom of the nav element, the zero eliminates the left and right sides of the border----*/
 	text-align: center;
-	margin-top: .5em; /*----This adds space above the nav element----*/
+	margin-top: 2em; /*----This adds space above the nav element----*/
+	position: fixed; /*----This makes my nav bar fixed----*/
+	background-color: white; /*----This is my fixed nav bar background color----*/
+	top: -40px; /*----This makes my fixed nav bar stay at the top----*/
+	width: 100%; /*----This applies my fixed nav bar across the screen----*/
+
 }
 
 nav li{
 	display: inline; /*----This allows the block level elements to display next to one another----*/
+	padding: 20px;
 	}	
 
 nav a{
 	display: inline-block;
-	padding: 10px; /*----This adds space around each of the links----*/
+	padding: 30px; /*----This adds space around each of the links----*/
 	}
 
 a{
@@ -149,5 +159,7 @@ a{
 
 a:hover{
 	color: #3d294d;
-	background: rgb(73, 157, 213, .50); /*----This uses opacity of 50% for the background color----*/
+	background:rgba(205, 178, 225, 0.859); /*----This uses opacity of 50% for the background color----*/
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
