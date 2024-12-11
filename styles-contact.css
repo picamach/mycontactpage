@@ -60,7 +60,11 @@ table {
 	padding:0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+ }
+
+ body,html{
+	height: 100%;
+	width: 100%;
  }
 
  .container{ /*----This is for my text----*/
@@ -80,12 +84,40 @@ table {
 	object-position: center;
  }
 
+ .container2{
+	display: flex;
+	height: 100vh;
+ }
+
+ .profile{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top:75px;
+ }
+
+ .profile img{
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	border: 8px solid white;
+	margin-right: 20px;
+	margin-left: 20px;
+ }
 #logo { /*----This is adjust my logo size----*/
 	width: 200px;
 	height: auto;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.content{
+	flex:1;
+	padding: 35px;
+	background-color: white;
 }
 
 h1 {
@@ -163,3 +195,4 @@ a:hover{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+ 
